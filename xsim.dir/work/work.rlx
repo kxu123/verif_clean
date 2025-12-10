@@ -1,0 +1,16 @@
+0.7
+2020.2
+May 21 2025
+22:59:56
+/home/krxu/project_verif/axi_cordic.sv,1765314819,systemVerilog,/home/krxu/project_verif/cordic_interface.sv,/home/krxu/project_verif/axi_cordic_item.sv,,axi_cordic,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_agent.sv,1765314819,systemVerilog,,/home/krxu/project_verif/axi_cordic_env.sv,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_driver.sv,1765328485,systemVerilog,,/home/krxu/project_verif/cordic_interface.sv,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_env.sv,1765314819,systemVerilog,,/home/krxu/project_verif/axi_cordic_test.sv,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_item.sv,1765330017,systemVerilog,,/home/krxu/project_verif/axi_cordic_driver.sv,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_monitor.sv,1765316376,systemVerilog,,/home/krxu/project_verif/axi_cordic_scoreboard.sv,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_scoreboard.sv,1765330110,systemVerilog,,/home/krxu/project_verif/axi_cordic_agent.sv,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_sequence.sv,1765328543,systemVerilog,,/home/krxu/project_verif/axi_cordic_monitor.sv,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/axi_cordic_test.sv,1765314819,systemVerilog,,,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,,,uvm,,,,,,
+/home/krxu/project_verif/cordic_interface.sv,1765314819,systemVerilog,,/home/krxu/project_verif/axi_cordic_sequence.sv,,cordic_interface,,uvm,,,,,,
+/home/krxu/project_verif/tb_top.sv,1765324259,systemVerilog,/home/krxu/project_verif/axi_cordic.sv;/home/krxu/project_verif/cordic_interface.sv,,/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh;/home/krxu/project_verif/cordic_interface.sv;/home/krxu/project_verif/axi_cordic.sv;/home/krxu/project_verif/axi_cordic_item.sv;/home/krxu/project_verif/axi_cordic_sequence.sv;/home/krxu/project_verif/axi_cordic_driver.sv;/home/krxu/project_verif/axi_cordic_monitor.sv;/home/krxu/project_verif/axi_cordic_scoreboard.sv;/home/krxu/project_verif/axi_cordic_agent.sv;/home/krxu/project_verif/axi_cordic_env.sv;/home/krxu/project_verif/axi_cordic_test.sv,$unit_tb_top_sv;cordic_dpi_pkg;tb_top,,uvm,,,,,,
+/tools/Xilinx/2025.1/data/xsim/system_verilog/uvm_include/uvm_macros.svh,1747891607,verilog,,,,,,,,,,,,

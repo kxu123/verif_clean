@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/krxu/project_verif/tb_top.sv" into library work
+INFO: [VRFC 10-311] analyzing module axi_cordic
+INFO: [VRFC 10-311] analyzing module tb_top

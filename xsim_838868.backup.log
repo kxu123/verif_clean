@@ -1,0 +1,186 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Dec  9 20:26:21 2025
+# Process ID         : 838868
+# Current directory  : /home/krxu/project_verif
+# Command line       : xsim -mode tcl -source {xsim.dir/test/xsim_script.tcl}
+# Log file           : /home/krxu/project_verif/xsim.log
+# Journal file       : /home/krxu/project_verif/xsim.jou
+# Running On         : eecs-digital-39
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen 7 5825U with Radeon Graphics
+# CPU Frequency      : 4366.593 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29342 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 37932 MB
+# Available Virtual  : 26027 MB
+#-----------------------------------------------------------
+source xsim.dir/test/xsim_script.tcl
+# xsim {test} -testplusarg UVM_TESTNAME=axi_cordic_test -autoloadwcfg -tclbatch {xsim_run_wave.tcl}
+Time resolution is 1 ps
+source xsim_run_wave.tcl
+## log_wave -recursive tb_top/*
+WARNING: [Simtcl 6-55] No matching HDL object or HDL scope found
+## run -all
+UVM_INFO /tools/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18601) @ 0: reporter [UVM/RELNOTES] 
+----------------------------------------------------------------
+UVM-1.2
+(C) 2007-2014 Mentor Graphics Corporation
+(C) 2007-2014 Cadence Design Systems, Inc.
+(C) 2006-2014 Synopsys, Inc.
+(C) 2011-2013 Cypress Semiconductor Corp.
+(C) 2013-2014 NVIDIA Corporation
+----------------------------------------------------------------
+
+  ***********       IMPORTANT RELEASE NOTES         ************
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_NO_DEPRECATED undefined.
+
+  You are using a version of the UVM library that has been compiled
+  with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+
+      (Specify +UVM_NO_RELNOTES to turn off this notice)
+
+UVM_INFO /tools/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(18648) @ 0: reporter [NO_DPI_TSTNAME] UVM_NO_DPI defined--getting UVM_TESTNAME directly, without DPI
+UVM_INFO @ 0: reporter [RNTST] Running test axi_cordic_test...
+UVM_INFO /tools/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(20867) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+-------------------------------------------------------------------------------------------------
+Name                           Type             Size  Value                                      
+-------------------------------------------------------------------------------------------------
+item                           axi_cordic_item  -     @613                                       
+  s00_data_x                   integral         32    'hdb6c                                     
+  s00_data_y                   integral         32    'hf9f0                                     
+  m00_data_x                   integral         32    'h0                                        
+  m00_data_z                   integral         32    'h0                                        
+  ref_x                        real             64    0.000000                                   
+  ref_z                        real             64    0.000000                                   
+  begin_time                   time             64    105000                                     
+  depth                        int              32    'd2                                        
+  parent sequence (name)       string           3     seq                                        
+  parent sequence (full name)  string           43    uvm_test_top.env.cordic_agent.sequencer.seq
+  sequencer                    string           39    uvm_test_top.env.cordic_agent.sequencer    
+-------------------------------------------------------------------------------------------------
+UVM_INFO axi_cordic_monitor.sv(39) @ 315000: uvm_test_top.env.cordic_agent.monitor [axi_cordic_monitor] Monitor found packet s00_x=-9364 s00_y=-1552 m00_x=9492 m00_z=-31056 ref_x=0.000000 ref_z=0.000000
+IN SCOREBOARD, actual is        9492, expected is 3137.345947, actual_hex: 00002514
+cordic_reference, original_x -9364.000000, original_y -1552.000000
+x: 3137.345947, z: -99.881294, size of x 4
+UVM_ERROR axi_cordic_scoreboard.sv(28) @ 315000: uvm_test_top.env.scoreboard [SCB_FAIL] X Mismatch! InX=-9364 InY=-1552 | DUT_X=9492 Ref_X=3137.345947
+IN SCOREBOARD, SUM IS 89.118706, actual is         189, expected is -99.881294, actual_hex: 000000bd
+UVM_ERROR axi_cordic_scoreboard.sv(34) @ 315000: uvm_test_top.env.scoreboard [SCB_FAIL] Z Mismatch! InX=-9364 InY=-1552 | DUT_Z=189.295200 Ref_Z=-99.881294
+-------------------------------------------------------------------------------------------------
+Name                           Type             Size  Value                                      
+-------------------------------------------------------------------------------------------------
+item                           axi_cordic_item  -     @781                                       
+  s00_data_x                   integral         32    'h8261                                     
+  s00_data_y                   integral         32    'h9a85                                     
+  m00_data_x                   integral         32    'h0                                        
+  m00_data_z                   integral         32    'h0                                        
+  ref_x                        real             64    0.000000                                   
+  ref_z                        real             64    0.000000                                   
+  begin_time                   time             64    325000                                     
+  depth                        int              32    'd2                                        
+  parent sequence (name)       string           3     seq                                        
+  parent sequence (full name)  string           43    uvm_test_top.env.cordic_agent.sequencer.seq
+  sequencer                    string           39    uvm_test_top.env.cordic_agent.sequencer    
+-------------------------------------------------------------------------------------------------
+UVM_INFO axi_cordic_monitor.sv(39) @ 535000: uvm_test_top.env.cordic_agent.monitor [axi_cordic_monitor] Monitor found packet s00_x=-32159 s00_y=-25979 m00_x=-24194 m00_z=-25682 ref_x=0.000000 ref_z=0.000000
+cordic_reference, original_x -32159.000000, original_y -25979.000000
+x: 31126.667969, z: -99.881294, size of x 4
+IN SCOREBOARD, actual is       41342, expected is 31126.667969, actual_hex: 0000a17e
+UVM_ERROR axi_cordic_scoreboard.sv(28) @ 535000: uvm_test_top.env.scoreboard [SCB_FAIL] X Mismatch! InX=-32159 InY=-25979 | DUT_X=41342 Ref_X=31126.667969
+IN SCOREBOARD, SUM IS 119.118706, actual is         219, expected is -99.881294, actual_hex: 000000db
+UVM_ERROR axi_cordic_scoreboard.sv(34) @ 535000: uvm_test_top.env.scoreboard [SCB_FAIL] Z Mismatch! InX=-32159 InY=-25979 | DUT_Z=218.798460 Ref_Z=-99.881294
+-------------------------------------------------------------------------------------------------
+Name                           Type             Size  Value                                      
+-------------------------------------------------------------------------------------------------
+item                           axi_cordic_item  -     @879                                       
+  s00_data_x                   integral         32    'h5165                                     
+  s00_data_y                   integral         32    'h4602                                     
+  m00_data_x                   integral         32    'h0                                        
+  m00_data_z                   integral         32    'h0                                        
+  ref_x                        real             64    0.000000                                   
+  ref_z                        real             64    0.000000                                   
+  begin_time                   time             64    545000                                     
+  depth                        int              32    'd2                                        
+  parent sequence (name)       string           3     seq                                        
+  parent sequence (full name)  string           43    uvm_test_top.env.cordic_agent.sequencer.seq
+  sequencer                    string           39    uvm_test_top.env.cordic_agent.sequencer    
+-------------------------------------------------------------------------------------------------
+UVM_INFO axi_cordic_monitor.sv(39) @ 755000: uvm_test_top.env.cordic_agent.monitor [axi_cordic_monitor] Monitor found packet s00_x=20837 s00_y=17922 m00_x=27485 m00_z=-7408 ref_x=0.000000 ref_z=0.000000
+cordic_reference, original_x 20837.000000, original_y 17922.000000
+x: 27496.847656, z: 40.699055, size of x 4
+IN SCOREBOARD, actual is       27485, expected is 27496.847656, actual_hex: 00006b5d
+IN SCOREBOARD, SUM IS 359.699055, actual is         319, expected is 40.699055, actual_hex: 0000013f
+-------------------------------------------------------------------------------------------------
+Name                           Type             Size  Value                                      
+-------------------------------------------------------------------------------------------------
+item                           axi_cordic_item  -     @973                                       
+  s00_data_x                   integral         32    'h453c                                     
+  s00_data_y                   integral         32    'h87e3                                     
+  m00_data_x                   integral         32    'h0                                        
+  m00_data_z                   integral         32    'h0                                        
+  ref_x                        real             64    0.000000                                   
+  ref_z                        real             64    0.000000                                   
+  begin_time                   time             64    765000                                     
+  depth                        int              32    'd2                                        
+  parent sequence (name)       string           3     seq                                        
+  parent sequence (full name)  string           43    uvm_test_top.env.cordic_agent.sequencer.seq
+  sequencer                    string           39    uvm_test_top.env.cordic_agent.sequencer    
+-------------------------------------------------------------------------------------------------
+UVM_INFO axi_cordic_monitor.sv(39) @ 975000: uvm_test_top.env.cordic_agent.monitor [axi_cordic_monitor] Monitor found packet s00_x=17724 s00_y=-30749 m00_x=-30043 m00_z=10930 ref_x=0.000000 ref_z=0.000000
+cordic_reference, original_x 17724.000000, original_y -30749.000000
+x: 35507.816406, z: -60.041180, size of x 4
+IN SCOREBOARD, actual is       35493, expected is 35507.816406, actual_hex: 00008aa5
+IN SCOREBOARD, SUM IS -0.041180, actual is          60, expected is -60.041180, actual_hex: 0000003c
+UVM_ERROR axi_cordic_scoreboard.sv(34) @ 975000: uvm_test_top.env.scoreboard [SCB_FAIL] Z Mismatch! InX=17724 InY=-30749 | DUT_Z=60.005700 Ref_Z=-60.041180
+-------------------------------------------------------------------------------------------------
+Name                           Type             Size  Value                                      
+-------------------------------------------------------------------------------------------------
+item                           axi_cordic_item  -     @1069                                      
+  s00_data_x                   integral         32    'hcab0                                     
+  s00_data_y                   integral         32    'ha97d                                     
+  m00_data_x                   integral         32    'h0                                        
+  m00_data_z                   integral         32    'h0                                        
+  ref_x                        real             64    0.000000                                   
+  ref_z                        real             64    0.000000                                   
+  begin_time                   time             64    985000                                     
+  depth                        int              32    'd2                                        
+  parent sequence (name)       string           3     seq                                        
+  parent sequence (full name)  string           43    uvm_test_top.env.cordic_agent.sequencer.seq
+  sequencer                    string           39    uvm_test_top.env.cordic_agent.sequencer    
+-------------------------------------------------------------------------------------------------
+UVM_INFO axi_cordic_monitor.sv(39) @ 1195000: uvm_test_top.env.cordic_agent.monitor [axi_cordic_monitor] Monitor found packet s00_x=-13648 s00_y=-22147 m00_x=26015 m00_z=-22144 ref_x=0.000000 ref_z=0.000000
+cordic_reference, original_x -13648.000000, original_y -22147.000000
+x: 24171.707031, z: -99.881294, size of x 4
+IN SCOREBOARD, actual is       26015, expected is 24171.707031, actual_hex: 0000659f
+UVM_ERROR axi_cordic_scoreboard.sv(28) @ 1195000: uvm_test_top.env.scoreboard [SCB_FAIL] X Mismatch! InX=-13648 InY=-22147 | DUT_X=26015 Ref_X=24171.707031
+IN SCOREBOARD, SUM IS 138.118706, actual is         238, expected is -99.881294, actual_hex: 000000ee
+UVM_ERROR axi_cordic_scoreboard.sv(34) @ 1195000: uvm_test_top.env.scoreboard [SCB_FAIL] Z Mismatch! InX=-13648 InY=-22147 | DUT_Z=238.222080 Ref_Z=-99.881294
+UVM_INFO /tools/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(19968) @ 1405000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+UVM_INFO /tools/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv(13673) @ 1405000: reporter [UVM/REPORT/SERVER] 
+--- UVM Report Summary ---
+
+** Report counts by severity
+UVM_INFO :   10
+UVM_WARNING :    0
+UVM_ERROR :    7
+UVM_FATAL :    0
+** Report counts by id
+[NO_DPI_TSTNAME]     1
+[RNTST]     1
+[SCB_FAIL]     7
+[TEST_DONE]     1
+[UVM/COMP/NAMECHECK]     1
+[UVM/RELNOTES]     1
+[axi_cordic_monitor]     5
+
+$finish called at time : 1405 ns : File "/tools/Xilinx/2025.1/Vivado/data/system_verilog/uvm_1.2/xlnx_uvm_package.sv" Line 18699
+## exit
+INFO: [Common 17-206] Exiting xsim at Tue Dec  9 20:26:23 2025...

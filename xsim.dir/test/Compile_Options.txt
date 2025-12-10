@@ -1,0 +1,1 @@
+-debug "typical" -top "tb_top" -L "uvm" -sv_lib "dpi" -snapshot "test" 
