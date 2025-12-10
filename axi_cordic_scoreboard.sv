@@ -1,5 +1,4 @@
 `include "uvm_macros.svh"
-// `include "axi_cordic_item.sv"
 import cordic_dpi_pkg::*;
 import uvm_pkg::*;
 
@@ -24,16 +23,16 @@ class axi_cordic_scoreboard extends uvm_scoreboard;
     cordic_reference(sv_in_x, sv_in_y, exp_x, exp_z);
     //$display("HERE! item_m00_data_x %b, %f", item.m00_data_x, item.m00_data_x[15:0]);
     if ( !magnitude_within_tolerance(item.m00_data_x[15:0], exp_x) ) begin
-       `uvm_error("SCB_FAIL", $sformatf("X Mismatch! InX=%0d InY=%0d | DUT_X=%0d Ref_X=%0f", 
+       `uvm_error("FAIL", $sformatf("X Mismatch InX=%0d InY=%0d | DUT_X=%0d Ref_X=%0f", 
                                         item.s00_data_x, item.s00_data_y, item.m00_data_x[15:0], exp_x))
     end else begin
-       `uvm_info("SCB_PASS", $sformatf("X Match! DUT=%0d Ref=%0f", item.m00_data_x[15:0], exp_x), UVM_HIGH)
+       `uvm_info("PASS", $sformatf("X Match DUT=%0d Ref=%0f", item.m00_data_x[15:0], exp_x), UVM_HIGH)
     end
     if ( !is_within_tolerance(item.m00_data_z[15:0]* 0.00549, exp_z) ) begin
-       `uvm_error("SCB_FAIL", $sformatf("Z Mismatch! InX=%0d InY=%0d | DUT_Z=%0f Ref_Z=%0f", 
+       `uvm_error("FAIL", $sformatf("Z Mismatch InX=%0d InY=%0d | DUT_Z=%0f Ref_Z=%0f", 
                                         item.s00_data_x, item.s00_data_y, item.m00_data_z[15:0] * 0.00549, exp_z))
     end else begin
-       `uvm_info("SCB_PASS", $sformatf("Z Match! DUT=%0d Ref=%0f", item.m00_data_z[15:0]* 0.00549, exp_z), UVM_HIGH)
+       `uvm_info("PASS", $sformatf("Z Match DUT=%0d Ref=%0f", item.m00_data_z[15:0]* 0.00549, exp_z), UVM_HIGH)
     end
     
   endfunction

@@ -11,6 +11,7 @@ endpackage : cordic_dpi_pkg
 `include "cordic_interface.sv"
 `include "axi_cordic.sv"
 `include "axi_cordic_item.sv"
+`include "axi_cordic_coverage.sv"
 `include "axi_cordic_sequence.sv"
 `include "axi_cordic_driver.sv"
 `include "axi_cordic_monitor.sv"

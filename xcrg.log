@@ -1,0 +1,49 @@
+
+ Options Set are : 
+
+   Report Format              : html
+   Log File                   : xcrg.log
+   Functional Coverage Dir[s] : ./coverage_db
+   Functional Coverage DB[s]  : coverage
+   Code Coverage Dir[s]       : ./coverage_db
+   Code Coverage DB[s]        : coverage
+
+
+********************************************************
+                  Code Coverage Report 
+********************************************************
+
+ Restoring Code Coverage DB[s] from : 
+  1	./coverage_db/xsim.codeCov/coverage/xsim.CCInfo
+
+ Code Coverage HTML Report directory              : ./xsim_coverage_report/codeCoverageReport
+
+ Line Coverage Score 98.2258
+ Branch Coverage Score 20.9205
+ Condition Coverage Score 26.5823
+ Toggle Coverage Score 14.8
+
+
+
+********************************************************
+                  Functional Coverage Report 
+********************************************************
+
+ Restoring Functional Coverage DB[s] from : 
+  1	./coverage_db/xsim.covdb/coverage/xsim.covinfo
+
+ Line Coverage Score 98.2258
+ Branch Coverage Score 20.9205
+ Condition Coverage Score 26.5823
+ Toggle Coverage Score 14.8
+
+ Functional Coverage HTML Report directory        : ./xsim_coverage_report/functionalCoverageReport
+
+ Creating dashboard.html 
+
+ Creating groups.html 
+
+ Creating grp0.html 
+
+ Creating grp1.html 
+

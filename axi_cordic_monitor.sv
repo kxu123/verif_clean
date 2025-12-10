@@ -1,5 +1,4 @@
 `include "uvm_macros.svh"
-// `include "axi_cordic_item.sv"
 import uvm_pkg::*;
 
 class axi_cordic_monitor extends uvm_monitor;

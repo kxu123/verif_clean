@@ -1,1 +1,1 @@
--debug "typical" -top "tb_top" -L "uvm" -sv_lib "dpi" -snapshot "test" 
+-debug "typical" -top "tb_top" -L "uvm" -sv_lib "dpi" -cc_type "sbct" -cov_db_dir "./coverage_db" -cov_db_name "coverage" -snapshot "test" 

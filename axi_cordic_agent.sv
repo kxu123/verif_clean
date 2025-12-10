@@ -1,7 +1,4 @@
 `include "uvm_macros.svh"
-// `include "axi_cordic_driver.sv"
-// `include "axi_cordic_sequence.sv"
-// `include "axi_cordic_monitor.sv"
 import uvm_pkg::*;
 
 class axi_cordic_agent extends uvm_agent;

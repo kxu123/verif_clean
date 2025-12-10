@@ -1,7 +1,4 @@
 `include "uvm_macros.svh"
-// `include "axi_cordic_env.sv"
-// `include "cordic_interface.sv"
-// `include "axi_cordic_sequence.sv"
 import uvm_pkg::*;
 
 class axi_cordic_test extends uvm_test;
